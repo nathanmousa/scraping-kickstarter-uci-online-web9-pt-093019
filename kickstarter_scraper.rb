@@ -10,6 +10,6 @@ def create_project_hash
   project.css("div.project-thumbnail a img").attibute("src").value
   project.css("p.bbcard_blurb").text
   project.css("ul.project-meta span.location-name").text
-  project.css("ul.project-stats li.first.funded strong").text
+  project.css("ul.project-stats li.first.funded strong").text.text.gsub("%","").to_i
   
 end
